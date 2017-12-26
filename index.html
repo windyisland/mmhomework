@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <title>现代地图学作业</title>
-<script type="text/javascript" src="https://raw.githack.com/windyisland/hyw/master/iscroll.js"></script>
-<script type="text/javascript" src="https://raw.githack.com/windyisland/hyw/master/utils.js"></script>
-<link rel="stylesheet" href="https://raw.githack.com/windyisland/hyw/master/css/xddtx_homework_ui.css"/>
+<script type="text/javascript" src="https://raw.githack.com/windyisland/mmhomework/master/iscroll.js"></script>
+<script type="text/javascript" src="https://raw.githack.com/windyisland/mmhomework/master/utils.js"></script>
+<link rel="stylesheet" href="https://raw.githack.com/windyisland/mmhomework/tree/master/css"/>
 <script type="text/javascript">
 var myScroll;
-var sdpm="https://raw.githack.com/windyisland/hyw/master/sdpm.html";
-var sdprec="https://raw.githack.com/windyisland/hyw/master/sdprec.html";
-var sdgdp="https://raw.githack.com/windyisland/hyw/master/sdgdp.html";
-var sdws="https://raw.githack.com/windyisland/hyw/master/sdws.html";
+var sdpm="https://raw.githack.com/windyisland/mmhomework/master/sdpm.html";
+var sdprec="https://raw.githack.com/windyisland/mmhomework/master/sdprec.html";
+var sdgdp="https://raw.githack.com/windyisland/mmhomework/master/sdgdp.html";
+var sdws="https://raw.githack.com/windyisland/mmhomework/master/sdws.html";
 var count=0;
 var t;
 var point=["。","。。","。。。","。。。。"];
@@ -98,7 +98,7 @@ function stopCount()
 
 function load_map(){
 	var R_iframe=document.getElementById("show_R");
-	R_iframe.src="https://raw.githack.com/windyisland/hyw/master/R+leaflet.html";
+	R_iframe.src="https://raw.githack.com/windyisland/mmhomework/master/R+leaflet.html";
 	var R_p=document.getElementById("load_ready");
 	time_count();
 	if (R_iframe.attachEvent)
@@ -132,7 +132,7 @@ function load_map(){
 	&nbsp&nbsp(1)网页界面设计的css为当前库中的/css/xddtx_homework_ui.css<br>
 	&nbsp&nbsp(2)mapbox中图例以及显示属性的交互采用Mapbox Studio和Mapbox GLJS 完成。<br>
 	&nbsp&nbsp(3)由于leaflet+R进行制图的数据量较大，影响网页加载流畅程度，故采用按钮加载的方式<br>
-	&nbsp&nbsp(4)开发用到的文件及代码（除shp以外）均以上传到github。 <a href="https://github.com/windyisland/hyw">点我跳向github</a>
+	&nbsp&nbsp(4)开发用到的文件及代码（除shp以外）均以上传到github。 <a href="https://github.com/windyisland/mmhomework">点我跳向github</a>
 </p>
 <br>
 <br>
@@ -156,7 +156,7 @@ function load_map(){
 </div>
 <br>
 
-<iframe id="show_ditu" src="https://raw.githack.com/windyisland/hyw/master/initial_img/initial_click_tag.html"></iframe><br>
+<iframe id="show_ditu" src="https://raw.githack.com/windyisland/mmhomework/master/initial_img/initial_click_tag.html"></iframe><br>
 <br>
 <br>
 <h2>R+leaflet制图部分(第一幅图为北京房价图，第二幅图为京津冀植被分类图)</h2>
@@ -164,7 +164,7 @@ function load_map(){
 	<button onclick="load_map()">点击加载地图</button>
 	<p id="load_ready" > </p>
 </div>
-<iframe id="show_R" src="https://raw.githack.com/windyisland/hyw/master/initial_img/initial_click_button.html"> </iframe><br>
+<iframe id="show_R" src="https://raw.githack.com/windyisland/mmhomework/master/initial_img/initial_click_button.html"> </iframe><br>
 <p style="color: red;text-align: right;">网页仅供作业学习所用。如若数据有侵权请联系作者删除</p>
 </body>
 </html>
