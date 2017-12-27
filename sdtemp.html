@@ -23,8 +23,8 @@
   container: 'map', // container id
   style: 'mapbox://styles/dataideng/cjbnp5h50592t2tjqdl8ncjy2' // replace this with your style URL
 });
-  var layers = ['0-8', '8-9', '9-10', '10-11', '11-12', '12-13', '13-14', '14-16'];
-  var colors = ['rgba(0,0,205,1)', 'rgba(65,105,255,1)', 'rgba(0,0,255,1)', 'rgba(30,144,255,1)', 'rgba(0,191,255,1)', 'rgba(135,206,250,1)', 'rgba(178,223,238,1)', 'rgba(209,238,238,1)'];
+  var layers = ['温度图例(℃)','0-8', '8-9', '9-10', '10-11', '11-12', '12-13', '13-14', '14-16'];
+  var colors = [,'rgba(0,0,205,1)', 'rgba(65,105,255,1)', 'rgba(0,0,255,1)', 'rgba(30,144,255,1)', 'rgba(0,191,255,1)', 'rgba(135,206,250,1)', 'rgba(178,223,238,1)', 'rgba(209,238,238,1)'];
   for (i = 0; i < layers.length; i++) {
   var layer = layers[i];
   var color = colors[i];
@@ -46,7 +46,7 @@
   });
 
   if (states.length > 0) {
-    document.getElementById('pd').innerHTML = '<h3><strong>此处温度为：' + states[0].properties.gridcode + '</strong>°</h3>';
+    document.getElementById('pd').innerHTML = '<h3><strong>此处温度为：' + states[0].properties.gridcode + '</strong>℃</h3>';
   } else {
     document.getElementById('pd').innerHTML = '<p>当前地区没有数据</p>';
   }
