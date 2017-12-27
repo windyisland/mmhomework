@@ -90,6 +90,7 @@ function g(x)
 function time_count(){
 	var R_p=document.getElementById("load_ready");
 	R_p.innerHTML="&nbsp&nbsp&nbsp&nbsp&nbsp正在加载中请稍后"+point[count%4];
+	R_p.style.color="red";
 	count++;
 	t=setTimeout("time_count()",800);
 }
@@ -139,7 +140,7 @@ function load_map(){
 	&nbsp&nbsp(2)mapbox中图例以及显示属性的交互采用Mapbox Studio和Mapbox GLJS 完成。<br>
 	&nbsp&nbsp(3)由于leaflet+R进行制图的数据量较大，影响网页加载流畅程度，故采用按钮加载的方式<br>
 	&nbsp&nbsp(4)开发用到的文件及代码（除shp以外）均以上传到github。 <a href="https://github.com/windyisland/mmhomework">点我跳向github</a><br>
-	&nbsp&nbsp(5)由于mapbox所制成的地图为网络地图，所以可能遇到网络连接不佳，地图无法加载的情况。如遇上诉情况，请过段时间再尝试。
+	&nbsp&nbsp(5)由于mapbox所制成的地图为网络地图，所以可能遇到网络连接不佳，地图无法加载的情况。如遇上述情况，请过段时间再尝试。
 </p>
 <br>
 <br>
@@ -153,10 +154,10 @@ function load_map(){
 <div id="wrapper">
 	<div id="scroller">
 		<ul id="scroller_ul">
-			<li id="gdp" onclick="g(this.id)">山东省某年GDP分布图</li>
+			<li id="temp" onclick="g(this.id)">山东省某月温度分布图</li>
 			<li id="prec" onclick="g(this.id)">山东省某月降雨分布图</li>
 			<li id="wind" onclick="g(this.id)">山东省某月风速分布图</li>
-			<li id="temp" onclick="g(this.id)">山东省某月温度分布图</li>
+			<li id="gdp" onclick="g(this.id)">山东省某年GDP分布图</li>
 			<li id="pm" onclick="g(this.id)">山东省某月pm2.5分布图</li>
 		</ul>
 	</div>
