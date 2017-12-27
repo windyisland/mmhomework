@@ -46,7 +46,7 @@
   });
 
   if (states.length > 0) {
-    document.getElementById('pd').innerHTML = '<h3><strong>此处风速为：' + states[0].properties.RASTERVALU + '</strong>(m/s)</h3>';
+    document.getElementById('pd').innerHTML = '<h3><strong>此处风速为： <br>' + states[0].properties.RASTERVALU + '</strong>(m/s)</h3>';
   } else {
     document.getElementById('pd').innerHTML = '<p>当前地区没有数据</p>';
   }
