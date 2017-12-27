@@ -90,7 +90,6 @@ function g(x)
 function time_count(){
 	var R_p=document.getElementById("load_ready");
 	R_p.innerHTML="&nbsp&nbsp&nbsp&nbsp&nbsp正在加载中请稍后"+point[count%4];
-	R_p.style.color="red";
 	count++;
 	t=setTimeout("time_count()",800);
 }
@@ -113,6 +112,7 @@ function load_map(){
         R_iframe.attachEvent("onload", function(){
         	stopCount();
         	R_p.innerHTML="&nbsp&nbsp&nbsp&nbsp&nbsp加载完成！";
+        	R_p.style.color="red";
             console.log("Local iframe is now loaded1."); 
          });
     }
@@ -133,7 +133,7 @@ function load_map(){
 <h3>小组成员：黄焱威、索南东主、谢云鹏、李春林</h3>
 <h2>作业说明:</h2>
 <br>
-<p>&nbsp&nbsp本次作业采用了mapbox和leaflet+R两种方式制图，其中用mapbox进行山东省GDP分布图、降雨分布图、风向分布图、温度分布图、pm2.5分布图的制作，用R-leaflet进行京津冀植被分类图和北京市房价图的制作。另外，制作网页时用到了iscroll.js(作用：使标签滑动更加流畅。方法：待网页所有内容加载完全后，摁住标签页左右滑动)
+<p>&nbsp&nbsp本次作业采用了mapbox和leaflet+R两种方式制图，其中用mapbox进行了山东省GDP分布图、降雨分布图、风向分布图、温度分布图、pm2.5分布图的制作，用R-leaflet进行了京津冀植被分类图和北京市房价图的制作。另外，制作网页时用到了iscroll.js(作用：使标签滑动更加流畅。方法：待网页所有内容加载完全后，摁住标签页左右滑动)
 </p>
 <p>注：<br>
 	&nbsp&nbsp(1)网页界面设计的css为当前库中的/css/xddtx_homework_ui.css<br>
